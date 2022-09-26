@@ -1,5 +1,6 @@
 body {
     font-family: Arial;
+    background-color: darkseagreen;
 }
 h2 {
     font-size: 28px;
@@ -11,7 +12,38 @@ span {
     color: gray;
 }
 img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
 }
+header,
+section {
+    padding: 10px 60px 20px 60px;
+    background-color: white;
+    width: 960px;
+    margin: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    list-style: none;
+}
+header li {
+    margin-bottom: 15px;
+}
+.address-icon {
+    width: 15px;
+    height: 15px;
+    background-color: darkseagreen;
+    margin-right: 10px;
+    padding: 8px;
+    vertical-align: middle;
+}
+.circle {
+    border-radius: 50%;
+}
+
 
