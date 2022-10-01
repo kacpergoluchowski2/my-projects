@@ -2,11 +2,16 @@ body {
     font-family: Arial;
     background-color: darkseagreen;
 }
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 h2 {
     font-size: 28px;
 }
-h1 {
-    font-size: 36px;
+
+h3 {
+    margin-top: 5px;
 }
 span {
     color: gray;
@@ -27,6 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 60px;
 }
 header ul {
     list-style: none;
@@ -57,6 +63,39 @@ header li {
 }
 .hobbies li {
     width: 50%;
+    display: flex;
+    align-items: flex-start;
 }
-
+.hobbies div {
+    margin-left: 20px;
+}
+.hobbies p {
+    color: gray;
+}
+p {
+    line-height: 1.5;
+}
+.download_link {
+    border: 2px solid darkseagreen;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 26px;
+    transition: background-color 0.5s, color 0.5s;
+    box-shadow: 0 0 20px gray;
+}
+.download_link:hover {
+    color: wheat;
+    background-color: darkseagreen;
+}
+.download_link:focus {
+    outline: none;
+    color:white;
+    background-color: darkseagreen;
+}
+.download_link:active {
+    text-decoration: underline;
+}
 
