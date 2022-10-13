@@ -1,3 +1,6 @@
+body {
+    background-color: yellowgreen;
+}
 #container {
     width: 1920px;
     height: 1080px;
@@ -5,7 +8,7 @@
 #nav {
     float: left;
     width: 200px;
-    height: 1080px;
+    min-height: 1080px;
     background-color: yellowgreen;
     padding-left: 20px;
     padding-right: 20px;
@@ -14,7 +17,7 @@
 #main {
     float: right;
     width: 1680px;
-    height: 1080px;
+    min-height: 1080px;
     background-color: yellow;
     text-align: center;
 }
@@ -25,6 +28,12 @@
     display: inline;
     float: left;
     padding: 30px;
+}
+.jezykPolski {
+    display: inline;
+    float: left;
+    padding: 20px;
+    width: 500px;
 }
 .linkDoInnychStron {
     border: 2px solid green;
