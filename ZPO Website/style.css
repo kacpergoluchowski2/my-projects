@@ -1,0 +1,44 @@
+#container {
+    width: 1920px;
+    height: 1080px;
+}
+#nav {
+    float: left;
+    width: 200px;
+    height: 1080px;
+    background-color: yellowgreen;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+#main {
+    float: right;
+    width: 1680px;
+    height: 1080px;
+    background-color: yellow;
+    text-align: center;
+}
+.imgNav {
+    padding-bottom: 10px;
+}
+.loga {
+    display: inline;
+    float: left;
+    padding: 30px;
+}
+.linkDoInnychStron {
+    border: 2px solid green;
+    border-radius: 26px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+.linkDoInnychStron:hover {
+    color: white;
+    background-color: green;
+}
+.linkDoInnychStron:focus {
+    outline: none;
+    color: white;
+    background-color: green;
+}
