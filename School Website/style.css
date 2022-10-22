@@ -1,0 +1,107 @@
+body {
+    background-color: rgb(104, 160, 209);
+}
+
+.container {
+    width: 1920px;
+    height: 1000px;
+}
+
+.navLeft {
+    background-color: rgb(104, 160, 209);
+    min-height: 850px;
+    width: 250px;
+    display: inline-block;
+    float: left;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+    border-left: solid black 2px;
+    border-top: solid black 2px;
+}
+
+
+
+.logo {
+    background-image: url("img/tloLOGO.jpg");
+    width: 1848px;
+    height: 150px;
+    text-align: center;
+    margin: 0px;
+    border-top: solid black 2px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+}
+
+#napisLogo {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    color: white;
+}
+
+.nav {
+    background-color: rgb(44, 104, 156);
+    width: 1850px;
+    height: 100px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+}
+
+.footer {
+    background-color: rgb(44, 104, 156);
+    width: 1848px;
+    height: 40px;
+    font-size: 30px;
+    display: inline-block;
+    padding-top: 10px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+
+.content {
+    background-color: rgb(78, 138, 190);
+    width: 1850px;
+    min-height: 748px;
+    border-right: solid black 2px;
+    border-bottom: solid black 2px;
+}
+.przycisk {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-left: 69px;
+    padding-right: 100px;
+    margin-top: 300px;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    background-color: rgb(44, 104, 156);
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+.przycisk:hover {
+    text-decoration: none;
+    background-color: rgb(12, 59, 100);
+    border: solid gray 1px;
+}
+.przyciskNav {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(104, 160, 209);
+    display: inline-block;
+    padding-left: 27px;
+    padding-right: 26px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 1px;
+    transition: background-color 0.5s;
+}
+.przyciskNav:hover {
+    text-decoration: none;
+    background-color: rgb(78, 138, 190);
+    border: solid gray 1px;
+}
