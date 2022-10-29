@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Document </title>
+        <link rel = "stylesheet" href = "styleZdjecia.css"/>
+    </head>
+
+    <body>
+
+        <div class = "menu">
+            Facebook    
+        </div>
+
+        <div class = "container">
+            
+            
+            <div id = "tlo">
+                <img id = "demo" style = "width: 1300px; height: 300px;" src = "img/tlo4.jpg"/>
+            </div>
+
+            <script>
+                let tab = ["img/tlo1.jfif", "img/tlo2.jfif", "img/tlo3.jpg", "img/tlo4.jpg"];
+                i = 1;
+                function zmienTlo()
+                {
+                    document.getElementById("demo").src = tab[i];
+                    i++;
+                    if(i == 4)
+                    {
+                        i = 0;
+                    }
+                }
+            </script>
+
+            <button onclick ="zmienTlo()"> ZMIEN ZDJECIE W TLE </button>
+
+            <div class = "profilowe">
+                <img style = "width: 250px; height: 260px; border-radius: 100%; border: solid gray 5px;" src = "img/profilowe-znajomi.jpg"/> 
+            </div>
+
+            <div id = "dane">
+                <h1> Imie i nazwisko </h1>
+            </div>
+
+            <div id = "menu">
+                <hr width="90%">
+                <br>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Posty </a> </div>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Zdjęcia </a>  </div>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Znajomi </a>  </div>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Wiecej </a>  </div>
+                <br><br>
+                <hr width="90%">
+            </div>
+
+            <div id = "content">
+
+                <div id = "pngs"> 
+                    
+                    <h1 style = "font-size: 30px;"> Twoje zdjęcia </h1>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 27px; border-radius: 30px; margin-top: 30px;" src = "img/1.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/2.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/3.jfif"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/4.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/5.jpg"> </a>
+                    <div style = "clear: both;"></div>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 27px; border-radius: 30px; margin-top: 30px;" src = "img/6.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/7.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/8.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/9.jpg"> </a>
+                    <a href = "zdjecia/1.html"> <img style = "width: 200px; height: 200px; border: solid gray 1px; margin-left: 30px; border-radius: 30px;" src = "img/10.jpg"> </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </body>
+</html>

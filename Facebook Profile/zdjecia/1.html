@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel = "stylesheet" href = "zdjecia.css"/>
+    </head>
+    <body>
+        <script>
+            var tab = ["img/1.jpg", "img/2.jpg", "img/3.jfif", "img/4.jpg", "img/5.jpg", "img/6.jpg", "img/7.jpg", "img/8.jpg", "img/9.jpg", "img/10.jpg"]
+            var i=1;
+            function doPrzodu()
+            {
+                document.getElementById("png").src = tab[i];
+                i++; 
+                if(i==10)
+                    i=0;
+            }
+            function doTylu()
+            {
+                i--;
+                document.getElementById("png").src = tab[i];
+                if(i==0)
+                    i=10;
+            }
+        </script>
+        <button style = "font-size: 50px; position: absolute; top: 500px; left: 300px;" onclick="doTylu()"> < </button>
+        <img id = "png" style = "border: solid gray 2px; margin-left: 700px; margin-top: 200px;" src = "img/1.jpg">
+        <button style = "font-size: 50px; position: absolute; top: 500px; right: 300px;" onclick="doPrzodu()"> > </button>
+
+    </body>
+</html>

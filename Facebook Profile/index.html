@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Document </title>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+
+    <body>
+
+        <div class = "menu">
+            Facebook    
+        </div>
+
+        <div class = "container">
+            
+            
+            <div id = "tlo">
+                <img id = "demo" style = "width: 1300px; height: 300px;" src = "img/tlo4.jpg"/>
+            </div>
+
+            <script>
+                let tab = ["img/tlo1.jfif", "img/tlo2.jfif", "img/tlo3.jpg", "img/tlo4.jpg"];
+                i = 1;
+                function zmienTlo()
+                {
+                    document.getElementById("demo").src = tab[i];
+                    i++;
+                    if(i == 4)
+                    {
+                        i = 0;
+                    }
+                }
+            </script>
+
+            <button onclick ="zmienTlo()"> ZMIEN ZDJECIE W TLE </button>
+
+            <div class = "profilowe">
+                <img style = "width: 250px; height: 260px; border-radius: 100%; border: solid gray 5px;" src = "img/profilowe-znajomi.jpg"/> 
+            </div>
+
+            <div id = "dane">
+                <h1> Imie i nazwisko </h1>
+            </div>
+
+            <div id = "menu">
+                <hr width="90%">
+                <br>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Posty </a> </div>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "zdjecia.html"> Zdjęcia </a>  </div>
+                <div class = "przycisk"> <a style = "text-decoration: none; color: black;" href = "index.html"> Znajomi </a>  </div>
+                <nav class = "MENU">
+                    <div class = "dropdown">
+                        <a class = "przycisk" href = "#"> Więcej <img style = "width: 25px; height: 25px;" src = "img/iconmonstr-caret-down-circle-lined-64.png"> </a>
+                        <ul>
+                            <li><a href = "#"> Sport </a> </li>
+                            <li> <a href = "#"> Muzyka </a></li>
+                            <li> <a href = "#"> Polubienia </a> </li>
+                        </ul>
+                    </div>
+                </nav>
+                        
+                <br>    
+                <hr width="90%">
+            </div>
+
+            <div id = "content">
+
+                <div class = "informacje">
+                    <h1> PREZENTACJA </h1>
+                    <img style = "width: 25px; height: 25px;" src = "img/iconmonstr-home-thin-72.png"> <span style = "font-size: 25px;"> Miesza w: <strong><a style = "text-decoration: none; color: black;" href = "https://www.google.com/maps/place/26-067+Strawczynek/@50.9395111,20.4460998,16.5z/data=!4m6!3m5!1s0x47182ba9f9b0816b:0x6aac2faafbd04bb4!8m2!3d50.9398528!4d20.4484261!16s%2Fm%2F04jd_4c"> Strawczynek </a> </strong></span>
+                    <br><br>
+                    <img style = "width: 25px; height: 25px;" src = "img/iconmonstr-location-pin-thin-240.png"> <span style = "font-size: 25px;"> Z: <strong> <a style = "text-decoration: none; color: black;" href = "https://www.google.com/maps/place/26-067+Strawczynek/@50.9395111,20.4460998,16.5z/data=!4m6!3m5!1s0x47182ba9f9b0816b:0x6aac2faafbd04bb4!8m2!3d50.9398528!4d20.4484261!16s%2Fm%2F04jd_4c"> Strawczynek </a></strong></span>
+                    <br><br>
+                    <img style = "width: 25px; height: 25px;"src = "img/iconmonstr-heart-thin-72.png"><span style = "font-size: 25px;"> Wolny(a)</span>
+                    <br><br>
+                    <hr width="80%">
+                    <h2>Znajomi</h2>
+                    <span style="float: left; margin-left: 50px; position: absolute; top: 940px; left: 10px;"> 1500 znajomych</span> 
+                    <br>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1095px; left: 25px"> Imie i nazwisko</span>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1095px; left: 170px"> Imie i nazwisko</span>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1095px; left: 315px"> Imie i nazwisko</span>
+                    <div style = "clear: both;"></div> <br><br>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1255px; left: 25px"> Imie i nazwisko</span>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1255px; left: 170px"> Imie i nazwisko</span>
+                    <img class = "znaj" style = "margin-left: 20px;" src = "img/profilowe-znajomi.jpg"> <span style = "position: absolute; top: 1255px; left: 315px"> Imie i nazwisko</span>
+                </div>
+
+                <div class = "posty">
+                
+                    <h1> BRAK POSTÓW DO WYŚWIETLENIA </h1>
+
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
